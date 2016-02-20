@@ -12,12 +12,13 @@ class ExampleModule:
     def getHelpText(self):
         return "/command returns alls the blabla"
 ```
-2. In the scraper.py add the module to the modules array 
+2. In the scraper.py add the module to the modules array
 
 ```python
-exampleModule = ExampleModule()
+def main():
+    exampleModule = ExampleModule(dp)
 
-modules = [calendar, exampleModule]
+    modules = [calendar, exampleModule]
 ```
 
 Thats it.
