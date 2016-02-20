@@ -1,10 +1,14 @@
 # Hro-Telegram-Bot
 
-** Requirements **
+Scraper is the main file, Calendar is a module.
+
+## Requirements
 python-webkit2png https://github.com/adamn/python-webkit2png
 python-telegram-bot https://github.com/python-telegram-bot/python-telegram-bot
 
-Scraper is the main file, Calendar is a module,
+
+## Modules 
+
 You can add more modules by doing the following:
 
 1. Create the following functions within a module
