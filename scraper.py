@@ -3,6 +3,7 @@ import sys
 import datetime
 from calendar import Calendar
 from telegram import Updater
+from botconfig import BotConfig
 import logging
 
 # Enable logging
@@ -31,7 +32,7 @@ def main():
     global job_queue
     global modules
 
-    updater = Updater("193576374:AAEFGVk51zYFOSXzPBIgUxZn6Nzg_CQ2YO8")
+    updater = Updater(BotConfig().getApiToken())
     job_queue = updater.job_queue
 
     # Get the dispatcher to register handlers
