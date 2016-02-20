@@ -1,5 +1,9 @@
 # Hro-Telegram-Bot
 
+** Requirements **
+python-webkit2png https://github.com/adamn/python-webkit2png
+python-telegram-bot https://github.com/python-telegram-bot/python-telegram-bot
+
 Scraper is the main file, Calendar is a module,
 You can add more modules by doing the following:
 
