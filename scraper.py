@@ -2,7 +2,7 @@ import os
 import sys
 import datetime
 from calendar import Calendar
-from telegram import Updater
+from telegram.ext import Updater, CommandHandler
 from botconfig import BotConfig
 import logging
 
@@ -43,11 +43,11 @@ def main():
     modules = [calendar]
 
     # on different commands - answer in Telegram
-    dp.addTelegramCommandHandler("start", start)
-    dp.addTelegramCommandHandler("help", start)
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("help", start))
 
     # log all errors
-    dp.addErrorHandler(error)
+    dp.add_error_handler(error)
 
     # Start the Bot
     updater.start_polling()
